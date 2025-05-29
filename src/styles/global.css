@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'CGSC';
+  src: url('/fonts/coco-gothic-small-caps.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+    --font-inter: Inter;
+    --font-coco: "CGSC";
+
+    --color-celeste: #9ed7d8;
+    --color-arena: #f8c373;
+    --color-rosa: #db9191;
+}
+
+.font-spaced {
+    letter-spacing: .5em;
+    font-variant: small-caps;
+}
+
+.animate-fadein {
+    animation: fadein .5s ease-in-out;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

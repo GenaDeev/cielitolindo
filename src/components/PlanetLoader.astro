@@ -1,0 +1,451 @@
+<div class="orbit w-full h-full rounded-full bg-celeste">
+  <svg style="fill-rule:evenodd" viewBox="0 0 25000 25000">
+    <defs>
+      <radialGradient id="sun">
+        <stop offset="30%" stop-color="yellow"></stop>
+        <stop offset="100%" stop-color="orange"></stop>
+      </radialGradient>
+      <radialGradient id="sunshine">
+        <stop offset="10%" stop-color="orange"></stop>
+        <stop offset="95%" stop-color="transparent"></stop>
+      </radialGradient>
+      <linearGradient id="shadow">
+        <stop offset="0" stop-color="transparent"></stop>
+        <stop offset="50%" stop-color="#000"></stop>
+      </linearGradient>
+      <linearGradient id="mercury-shadow">
+        <stop offset="50%" stop-color="transparent"></stop>
+        <stop offset="100%" stop-color="rgba(0,0,0,.5)"></stop>
+      </linearGradient>
+      <linearGradient id="venus" x1="0" y1="0" x2="0" y2="100%">
+        <stop offset="30%" stop-color="#f0990e"></stop>
+        <stop offset="40%" stop-color="#fecb36"></stop>
+        <stop offset="60%" stop-color="#f0990e"></stop>
+        <stop offset="100%" stop-color="#f0990e"></stop>
+      </linearGradient>
+      <radialGradient id="earth" fx="0.2" fy="0.2">
+        <stop offset="50%" stop-color="#009688"></stop>
+        <stop offset="60%" stop-color="#009688"></stop>
+        <stop offset="70%" stop-color="#0270e9"></stop>
+        <stop offset="100%" stop-color="#0270e9"></stop>
+      </radialGradient>
+      <radialGradient id="mars" fx="0.3" fy="0.3">
+        <stop offset="60%" stop-color="#e25409"></stop>
+        <stop offset="65%" stop-color="#e25409"></stop>
+        <stop offset="100%" stop-color="#BF360C"></stop>
+      </radialGradient>
+      <linearGradient id="jupiter" x1="0" y1="0" x2="0" y2="100%">
+        <stop offset="15%" stop-color="#d7b872"></stop>
+        <stop offset="25%" stop-color="#a24416"></stop>
+        <stop offset="30%" stop-color="#a24416"></stop>
+        <stop offset="40%" stop-color="#a6563e"></stop>
+        <stop offset="60%" stop-color="#a6563e"></stop>
+        <stop offset="80%" stop-color="#6f3620"></stop>
+        <stop offset="100%" stop-color="#d7b872"></stop>
+      </linearGradient>
+      <linearGradient id="saturn" x1="0" x2="0" y1="0" y2="100%">
+        <stop offset="0%" stop-color="#ec9a22"></stop>
+        <stop offset="40%" stop-color="#d16c10"></stop>
+        <stop offset="55%" stop-color="#d16c10"></stop>
+        <stop offset="50%" stop-color="#ec9925"></stop>
+        <stop offset="70%" stop-color="#ec9925"></stop>
+        <stop offset="75%" stop-color="#d07b15"></stop>
+        <stop offset="100%" stop-color="#ec9a22"></stop>
+      </linearGradient>
+      <linearGradient id="uranus" x1="0" y1="0" x2="0" y2="100%">
+        <stop offset="15%" stop-color="#199cdd"></stop>
+        <stop offset="25%" stop-color="#32b1fd"></stop>
+        <stop offset="30%" stop-color="#199cdd"></stop>
+        <stop offset="40%" stop-color="#32b1fd"></stop>
+        <stop offset="60%" stop-color="#199cdd"></stop>
+        <stop offset="80%" stop-color="#32b1fd"></stop>
+        <stop offset="100%" stop-color="#199cdd"></stop>
+      </linearGradient>
+      <linearGradient id="neptune" x1="0" y1="0" x2="0" y2="100%">
+        <stop offset="0%" stop-color="#005de8"></stop>
+        <stop offset="25%" stop-color="#0747a3"></stop>
+        <stop offset="50%" stop-color="#287af7"></stop>
+        <stop offset="75%" stop-color="#0747a3"></stop>
+        <stop offset="100%" stop-color="#005de8"></stop>
+      </linearGradient>
+    </defs>
+    <g>
+      <circle class="neptune-orbit" cx="50%" cy="50%" r="12000"></circle>
+      <circle class="uranus-orbit" cx="50%" cy="50%" r="10500"></circle>
+      <circle class="saturn-orbit" cx="50%" cy="50%" r="8000"></circle>
+      <circle class="jupiter-orbit" cx="50%" cy="50%" r="5500"></circle>
+      <circle class="mars-orbit" cx="50%" cy="50%" r="4100"></circle>
+      <circle class="earth-orbit" cx="50%" cy="50%" r="3100"></circle>
+      <circle class="venus-orbit" cx="50%" cy="50%" r="2000"></circle>
+      <circle class="mercury-orbit" cx="50%" cy="50%" r="1000"></circle>
+      <circle class="sun" cx="50%" cy="50%" r="500"></circle>
+
+      <g class="neptune-group">
+        <circle class="neptune" cx="50%" cy="50%" r="450"></circle>
+        <circle class="shadow" cx="50%" cy="50%" r="450"></circle>
+      </g>
+      <g class="uranus-group">
+        <circle class="uranus" cx="50%" cy="50%" r="450"></circle>
+        <circle class="shadow" cx="50%" cy="50%" r="450"></circle>
+      </g>
+      <g class="saturn-group">
+        <circle class="saturn saturn-ring2" cx="50%" cy="50%" r="1400"></circle>
+        <circle class="shadow" cx="50%" cy="50%" r="1450"></circle>
+        <circle class="saturn saturn-ring1" cx="50%" cy="50%" r="1100"></circle>
+        <circle class="shadow" cx="50%" cy="50%" r="1320"></circle>
+        <circle class="saturn" cx="50%" cy="50%" r="700"></circle>
+        <circle class="shadow" cx="50%" cy="50%" r="700"></circle>
+      </g>
+      <g class="jupiter-group">
+        <circle class="jupiter" cx="50%" cy="50%" r="800"></circle>
+        <circle class="shadow" cx="50%" cy="50%" r="800"></circle>
+      </g>
+      <g class="mars-group">
+        <circle class="mars" cx="50%" cy="50%" r="300"></circle>
+        <circle class="shadow" cx="50%" cy="50%" r="300"></circle>
+      </g>
+      <g class="earth-group">
+        <circle class="earth-limit" cx="50%" cy="50%" r="590"></circle>
+        <circle class="moon-orbit" cx="50%" cy="50%" r="500"></circle>
+        <g class="moon-group">
+          <circle class="moon" cx="50%" cy="50%" r="50"></circle>
+          <circle class="moon-shadow" cx="50%" cy="50%" r="50"></circle>
+        </g>
+        <circle class="earth" cx="50%" cy="50%" r="400"></circle>
+        <circle class="shadow" cx="50%" cy="50%" r="400"></circle>
+      </g>
+      <g class="venus-group">
+        <circle class="venus" cx="50%" cy="50%" r="400"></circle>
+        <circle class="shadow" cx="50%" cy="50%" r="400"></circle>
+      </g>
+      <g class="mercury-group">
+        <circle class="mercury" cx="50%" cy="50%" r="100"></circle>
+        <circle class="mercury-shadow" cx="50%" cy="50%" r="100"></circle>
+      </g>
+    </g>
+  </svg>
+</div>
+<style>
+  .orbit {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 99%;
+  }
+  .sun {
+    fill: url(#sun);
+    transform: rotate(10deg);
+    transform-origin: center;
+  }
+
+  .mercury-orbit {
+    fill: none;
+    stroke: #000;
+    stroke-width: 75;
+  }
+  .venus-orbit {
+    fill: none;
+    stroke: #000;
+    stroke-width: 75;
+  }
+  .earth-orbit {
+    fill: url(#sunshine);
+    stroke: #000;
+    stroke-width: 75;
+  }
+  .mars-orbit {
+    fill: none;
+    stroke: #000;
+    stroke-width: 75;
+  }
+  .jupiter-orbit {
+    fill: none;
+    stroke: #000;
+    stroke-width: 75;
+  }
+  .saturn-orbit {
+    fill: none;
+    stroke: #000;
+    stroke-width: 75;
+  }
+  .uranus-orbit {
+    fill: none;
+    stroke: #000;
+    stroke-width: 75;
+  }
+  .neptune-orbit {
+    fill: none;
+    stroke: #000;
+    stroke-width: 75;
+  }
+  .neptune-orbit:hover {
+    fill: #fd0 !important;
+  }
+  /*planets*/
+  /*groups*/
+  .mercury-group {
+    transform-origin: center;
+    animation: mercury-group 11s linear infinite;
+  }
+  .mercury {
+    fill: #be9a60;
+    transform-origin: center;
+    animation: rotation-mercury 11s linear infinite;
+  }
+  .mercury-shadow {
+    fill: url(#mercury-shadow);
+  }
+  .venus-group {
+    transform-origin: center;
+    animation: venus-group 12s linear infinite;
+  }
+  .venus {
+    fill: url(#venus);
+    transform-origin: center;
+    animation: rotation-venus 12s linear infinite;
+  }
+  .earth-group {
+    transform-origin: center;
+    animation: earth-group 13s linear infinite;
+  }
+  .earth-limit {
+    fill: none;
+  }
+  .earth {
+    fill: url(#earth);
+    transform-origin: center;
+    animation: rotation-earth 13s linear infinite;
+  }
+  .moon-orbit {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 1;
+  }
+  .moon-group {
+    transform-origin: center;
+    animation: moon-group 3s linear infinite;
+  }
+  .moon {
+    fill: #e6e6e6;
+    transform-origin: center;
+    animation: rotation-moon 3s linear infinite;
+  }
+  .moon-shadow {
+    fill: url(#shadow);
+    transform-origin: center;
+    animation: rotation-moon 3s reverse linear infinite;
+  }
+  .mars-group {
+    transform-origin: center;
+    animation: mars-group 14s linear infinite;
+  }
+  .mars {
+    fill: url(#mars);
+    transform-origin: center;
+    animation: rotation-mars 14s linear infinite;
+  }
+  .jupiter-group {
+    transform-origin: center;
+    animation: jupiter-group 15s linear infinite;
+  }
+  .jupiter {
+    fill: url(#jupiter);
+    transform-origin: center;
+    animation: rotation-jupiter 15s linear infinite;
+  }
+  .saturn-group {
+    transform-origin: center;
+    animation: saturn-group 16s linear infinite;
+  }
+  .saturn {
+    fill: url(#saturn);
+    transform-origin: center;
+    animation: rotation-saturn 16s linear infinite;
+  }
+  .saturn-ring1 {
+    fill: none;
+    stroke: #bf4c0d;
+    stroke-width: 400;
+    animation: rotation-saturn 16s linear infinite;
+  }
+  .saturn-ring2 {
+    fill: none;
+    stroke: #bf4c0d;
+    stroke-width: 50;
+    animation: rotation-saturn 16s linear infinite;
+  }
+  .uranus-group {
+    transform-origin: center;
+    animation: uranus-group 17s linear infinite;
+  }
+  .uranus {
+    fill: url(#uranus);
+    transform-origin: center;
+    animation: rotation-uranus 17s linear infinite;
+  }
+  .neptune-group {
+    transform-origin: center;
+    animation: neptune-group 18s linear infinite;
+  }
+  .neptune {
+    fill: url(#neptune);
+    transform-origin: center;
+    animation: rotation-neptune 18s linear infinite;
+  }
+  .shadow {
+    fill: url(#shadow);
+  }
+
+  @keyframes mercury-group {
+    0% {
+      transform: rotate(0deg) translate(1000px);
+    }
+    100% {
+      transform: rotate(-360deg) translate(1000px);
+    }
+  }
+  @keyframes rotation-mercury {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes venus-group {
+    0% {
+      transform: rotate(0deg) translate(2000px);
+    }
+    100% {
+      transform: rotate(-360deg) translate(2000px);
+    }
+  }
+  @keyframes rotation-venus {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes earth-group {
+    0% {
+      transform: rotate(0deg) translate(3100px);
+    }
+    100% {
+      transform: rotate(-360deg) translate(3100px);
+    }
+  }
+  @keyframes rotation-earth {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes moon-group {
+    0% {
+      transform: rotate(0deg) translate(500px);
+    }
+    100% {
+      transform: rotate(-360deg) translate(500px);
+    }
+  }
+  @keyframes rotation-moon {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes mars-group {
+    0% {
+      transform: rotate(0deg) translate(4100px);
+    }
+    100% {
+      transform: rotate(-360deg) translate(4100px);
+    }
+  }
+  @keyframes rotation-mars {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes jupiter-group {
+    0% {
+      transform: rotate(0deg) translate(5500px);
+    }
+    100% {
+      transform: rotate(-360deg) translate(5500px);
+    }
+  }
+  @keyframes rotation-jupiter {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes saturn-group {
+    0% {
+      transform: rotate(0deg) translate(8000px);
+    }
+    100% {
+      transform: rotate(-360deg) translate(8000px);
+    }
+  }
+  @keyframes rotation-saturn {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes uranus-group {
+    0% {
+      transform: rotate(0deg) translate(10500px);
+    }
+    100% {
+      transform: rotate(-360deg) translate(10500px);
+    }
+  }
+  @keyframes rotation-uranus {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes neptune-group {
+    0% {
+      transform: rotate(0deg) translate(12000px);
+    }
+    100% {
+      transform: rotate(-360deg) translate(12000px);
+    }
+  }
+  @keyframes rotation-neptune {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>

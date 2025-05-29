@@ -1,0 +1,15 @@
+---
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props as Props;
+---
+
+<a
+  href={url}
+  target="_blank"
+  class="flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r bg-arena hover:scale-105 transition duration-300 shadow-lg hover:bg-rosa hover:shadow-rosa/80"
+>
+  <slot />
+</a>
