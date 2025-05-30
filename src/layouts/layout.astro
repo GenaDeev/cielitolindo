@@ -3,40 +3,51 @@ import "@/styles/global.css";
 import type { Metadata } from "@/types";
 interface Props {
   metadata: Metadata;
+  fitScreen?: boolean;
 }
 
-const { metadata } = Astro.props as Props;
+const { metadata, fitScreen } = Astro.props as Props;
 
 const { title, description, og, twitter, canonical, slug } = metadata;
 ---
 
-<html class="antialiased" lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		
-		<title>{title}</title>
-		<meta name="description" content={description} />
-		
-		<!-- Open Graph -->
-		<meta property="og:title" content={og?.title || title} />
-		<meta property="og:description" content={og?.description || description} />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content={"https://www.espaciocielitolindo.com.ar/images/opengraph/" + og?.image} />
-		<meta property="og:url" content={canonical} />
-		
-		<!-- Twitter -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:site" content="@genaaaaj" />
-		<meta name="twitter:title" content={twitter?.title || title} />
-		<meta name="twitter:description" content={twitter?.description || description} />
-		<meta name="twitter:image" content={"/images/opengraph/" + (twitter?.image || og?.image)} />
-		
-		<!-- Canonical -->
-		{canonical && <link rel="canonical" href={canonical} />}
-	</head>
-	<body class="bg-celeste text-black">
-		<slot/>
-	</body>
+<html class={`antialiased ${fitScreen ? "h-full" : ""}`} lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={og?.title || title} />
+    <meta property="og:description" content={og?.description || description} />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content={"https://www.espaciocielitolindo.com.ar/images/opengraph/" +
+        og?.image}
+    />
+    <meta property="og:url" content={canonical} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@genaaaaj" />
+    <meta name="twitter:title" content={twitter?.title || title} />
+    <meta
+      name="twitter:description"
+      content={twitter?.description || description}
+    />
+    <meta
+      name="twitter:image"
+      content={"/images/opengraph/" + (twitter?.image || og?.image)}
+    />
+
+    <!-- Canonical -->
+    {canonical && <link rel="canonical" href={canonical} />}
+  </head>
+  <body class={`bg-celeste text-black ${fitScreen ? "h-full" : ""}`}>
+    <slot />
+  </body>
 </html>
