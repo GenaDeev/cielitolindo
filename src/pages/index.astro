@@ -1,7 +1,6 @@
 ---
 import type { Metadata } from "@/types"
 import Layout from "@/layouts/layout.astro"
-import Build from "@/components/Build.astro"
 
 const metadata: Metadata = {
 	title: "CielitoLindo - Web en desarrollo",
@@ -20,6 +19,13 @@ const metadata: Metadata = {
 	}
 }
 ---
-<Layout fitScreen metadata={metadata}>
-	<Build />
+<Layout metadata={metadata}>
+	<main class="flex flex-col items-center font-inter animate-fadein">
+		<section class="h-hero w-full sm:w-[85%] flex flex-col items-center justify-center bg-cielo">
+			<h1 class="text-5xl font-coco">CielitoLindo</h1>
+			<p class="text-xl mt-4 text-center max-w-[70%] p-2">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minus dicta alias, illum mollitia optio officiis cum expedita eligendi enim. Vel iusto sit repellat vero tempore laboriosam, nam debitis officia!
+			</p>
+		</section>
+	</main>
 </Layout>

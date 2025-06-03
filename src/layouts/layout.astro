@@ -1,20 +1,22 @@
 ---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
 import "@/styles/global.css";
 import type { Metadata } from "@/types";
 interface Props {
   metadata: Metadata;
-  fitScreen?: boolean;
 }
 
-const { metadata, fitScreen } = Astro.props as Props;
+const { metadata } = Astro.props as Props;
 
 const { title, description, og, twitter, canonical, slug } = metadata;
 ---
 
-<html class={`antialiased ${fitScreen ? "h-full" : ""}`} lang="es">
+<html class={`antialiased`} lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" href="/fonts/coco-gothic-small-caps.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width" />
 
     <title>{title}</title>
@@ -47,7 +49,9 @@ const { title, description, og, twitter, canonical, slug } = metadata;
     <!-- Canonical -->
     {canonical && <link rel="canonical" href={canonical} />}
   </head>
-  <body class={`bg-celeste text-black ${fitScreen ? "h-full" : ""}`}>
+  <body class={`bg-celeste/30 text-black font-inter flex flex-col`}>
+    <Header/>
     <slot />
+    <Footer/>
   </body>
 </html>
