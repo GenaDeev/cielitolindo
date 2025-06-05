@@ -14,13 +14,16 @@ const { title, description, og, twitter, canonical, slug } = metadata;
 <html class={`antialiased ${fitScreen ? "h-full" : ""}`} lang="es">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.webp" />
+
     <meta name="viewport" content="width=device-width" />
 
     <title>{title}</title>
     <meta name="description" content={description} />
 
-    <!-- Open Graph -->
     <meta property="og:title" content={og?.title || title} />
     <meta property="og:description" content={og?.description || description} />
     <meta property="og:type" content="website" />
@@ -31,7 +34,6 @@ const { title, description, og, twitter, canonical, slug } = metadata;
     />
     <meta property="og:url" content={canonical} />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@genaaaaj" />
     <meta name="twitter:title" content={twitter?.title || title} />
