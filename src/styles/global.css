@@ -29,7 +29,7 @@
 }
 
 .bg-cielo {
-    background-image: url("/images/cielo.png");
+    background-image: url("/images/cielo.webp");
     background-size: cover;
     background-position: center;
 }
