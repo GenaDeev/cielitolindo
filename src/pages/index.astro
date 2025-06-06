@@ -1,6 +1,8 @@
 ---
 import type { Metadata } from "@/types";
 import Layout from "@/layouts/layout.astro";
+import PlanetLoader from "@/components/PlanetLoader.astro";
+import Divider from "@/components/Divider.astro";
 
 const metadata: Metadata = {
   title: "CielitoLindo - Web en desarrollo",
@@ -24,21 +26,118 @@ const metadata: Metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <main class="flex flex-col items-center font-inter animate-fadein">
+  <main
+    class="flex flex-col items-center font-inter gap-12 pb-12 animate-fadein"
+  >
     <section
-      class="w-full h-hero sm:w-[85%] flex flex-col items-center justify-center relative"
+      class="w-full lg:max-w-[960px] xl:max-w-[1200px] 2xl:max-w-[1400px] pt-32 md:pt-32 flex flex-col items-center relative px-4 md:px-8"
     >
       <div
-        class="absolute -z-10 inset-0 m-auto bg-cielo w-[90%] h-[80%] mt-[90px] rounded-xl"
+        class="absolute -z-10 inset-0 m-auto bg-cielo w-full h-[70%] sm:h-[70%] mt-[60px] sm:mt-[100px] rounded-xl shadow-xl"
       >
       </div>
-      <h1 class="text-5xl font-coco font-bold">CielitoLindo</h1>
-      <p class="text-xl mt-4 text-center max-w-[70%] p-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        minus dicta alias, illum mollitia optio officiis cum expedita eligendi
-        enim. Vel iusto sit repellat vero tempore laboriosam, nam debitis
-        officia!
-      </p>
+      <h1
+        class="text-4xl sm:text-5xl font-coco font-bold text-center mb-6 text-neutral-900"
+      >
+        CielitoLindo
+      </h1>
+      <div
+        class="bg-white/80 backdrop-blur-sm rounded-xl p-6 sm:p-8 max-w-[95%] sm:max-w-[85%] md:max-w-[75%] shadow-md"
+      >
+        <p
+          class="text-lg sm:text-xl text-center leading-relaxed text-neutral-800"
+        >
+          Bienvenidas y bienvenidos a <strong>Cielito Lindo</strong>, un <strong
+            >espacio sagrado</strong
+          > para la <strong>exploración personal</strong> y el <strong
+            >crecimiento consciente</strong
+          >. Nuestro propósito es <strong
+            >acompañar procesos de desarrollo</strong
+          > utilizando la <strong>astrología</strong> como principal lenguaje de
+          autoconocimiento. A lo largo de estos años hemos creado un <strong
+            >enfoque integral</strong
+          > que ponemos al servicio a través de las distintas propuestas que ofrecemos.
+          ¡Te invitamos a conocerlas!
+        </p>
+      </div>
+    </section>
+    <Divider />
+    <section
+      class="flex flex-col lg:flex-row lg:justify-between w-full lg:max-w-[960px] xl:max-w-[1200px] 2xl:max-w-[1400px] gap-8"
+    >
+      <article
+        class="w-full lg:w-1/2 h-[600px] flex flex-col items-center justify-center relative"
+      >
+        <div
+          class="bg-white/80 w-full backdrop-blur-sm lg:rounded-xl p-6 sm:p-8 h-full lg:shadow-md flex items-center"
+        >
+          <p
+            class="text-lg sm:text-xl text-center leading-relaxed text-neutral-800 space-y-6"
+          >
+            Nos gusta pensar la <strong>Astrología</strong> como un <strong
+              >lenguaje simbólico</strong
+            > que aclara y amplía la visión de la realidad que experimentamos.
+            <br /><br />
+            Nos invita a hacer un <strong>viaje de conciencia</strong> en el cual
+            ver, profundizar y resignificar la idea que tenemos de nosotros mismos
+            y nuestros planes. En lugar de confirmarnos y llenarnos de etiquetas
+            nos propone <strong>ablandar nuestras resistencias</strong> para integrar
+            la totalidad que somos.
+            <br /><br />
+            Nos ayuda a <strong>sensibilizar nuestra percepción</strong> y poder
+            captar la sutileza de nuestro propio orden.
+          </p>
+        </div>
+      </article>
+      <article
+        class="w-full hidden lg:flex lg:w-1/2 h-[500px] md:h-[600px] p-16 items-center justify-center bg-white/80 backdrop-blur-sm rounded-xl shadow-md"
+      >
+        <PlanetLoader bg="transparent" />
+      </article>
+    </section>
+    <Divider />
+    <section
+      class="flex flex-col lg:flex-row lg:justify-between w-full lg:max-w-[960px] xl:max-w-[1200px] 2xl:max-w-[1400px] gap-8"
+    >
+      <h2
+        class="text-4xl font-coco font-bold text-center mb-6 text-neutral-900 lg:hidden"
+      >
+        Nosotras
+      </h2>
+
+      <article
+        class="w-full hidden lg:flex lg:w-1/2 h-[500px] md:h-[600px] p-16 items-center justify-center bg-white/80 backdrop-blur-sm rounded-xl shadow-md"
+      >
+        <!-- Placeholder para la foto de las chicas -->
+        <div
+          class="w-full h-full bg-neutral-200 rounded-lg flex items-center justify-center text-neutral-600"
+        >
+          [Foto de Lu y Iani]
+        </div>
+      </article>
+      <article
+        class="w-full lg:w-1/2 h-[500px] lg:h-[600px] flex flex-col items-center justify-center relative"
+      >
+        <div
+          class="w-full h-full lg:hidden bg-neutral-200 rounded-t-lg flex items-center justify-center text-neutral-600"
+        >
+          [Foto de Lu y Iani]
+        </div>
+        <div
+          class="bg-white/80 w-full backdrop-blur-sm lg:rounded-xl p-6 sm:p-8 h-full lg:shadow-md flex items-center"
+        >
+          <p
+            class="text-lg sm:text-xl text-center leading-relaxed text-neutral-800"
+          >
+            Somos Lu y Iani. Virgo y Piscis, la unión de la razón y la magia,
+            del orden y del caos creador, la parte y el todo. Sembramos nuestra
+            semilla astrológica en el 2017 y desde entonces este lenguaje
+            simbólico y profundo se ha convertido en una forma de mirar y
+            habitar la vida. Creemos que llegó el momento de compartir esta
+            cosmovisión y ponerla al servicio de otras personas.
+          </p>
+        </div>
+      </article>
     </section>
   </main>
 </Layout>

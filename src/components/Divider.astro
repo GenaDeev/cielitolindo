@@ -1,0 +1,102 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<div class:list={["w-full h-32 sm:h-56 relative", className]}>
+  <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 1440 180"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+    class="animate-pulse"
+  >
+    <rect width="100%" height="100%" fill="none"></rect>
+
+    <!-- Curvas decorativas (tipo órbitas/ondas) -->
+    <path
+      d="M0,90 Q360,10 720,90 T1440,90"
+      stroke="#9ed7d8"
+      stroke-opacity="0.1"
+      fill="none"
+      stroke-width="2"></path>
+    <path
+      d="M0,120 Q360,40 720,120 T1440,120"
+      stroke="#9ed7d8"
+      stroke-opacity="0.08"
+      fill="none"
+      stroke-width="1.5"></path>
+    <path
+      d="M0,150 Q360,70 720,150 T1440,150"
+      stroke="#9ed7d8"
+      stroke-opacity="0.05"
+      fill="none"
+      stroke-width="1.2"></path>
+
+    <!-- Estrella -->
+    <g fill="#9ed7d8" transform="translate(50,50) scale(1.4)">
+      <path d="M10 0 L12 7 H20 L13.5 11 L16 18 L10 13 L4 18 L6.5 11 L0 7 H8Z"
+      ></path>
+    </g>
+
+    <!-- Planeta con anillos -->
+    <g
+      fill="none"
+      stroke="#9ed7d8"
+      stroke-width="1"
+      transform="translate(200,110)"
+    >
+      <circle cx="0" cy="0" r="10" fill="#9ed7d8"></circle>
+      <ellipse cx="0" cy="0" rx="18" ry="6"></ellipse>
+    </g>
+
+    <!-- Estrella -->
+    <g fill="#9ed7d8" transform="translate(350,30) scale(1.2)">
+      <path d="M10 0 L12 7 H20 L13.5 11 L16 18 L10 13 L4 18 L6.5 11 L0 7 H8Z"
+      ></path>
+    </g>
+
+    <!-- Planeta simple -->
+    <g transform="translate(500,60)">
+      <circle cx="0" cy="0" r="8" fill="#9ed7d8"></circle>
+    </g>
+
+    <!-- Estrella -->
+    <g fill="#9ed7d8" transform="translate(650,100) scale(1.3)">
+      <path d="M10 0 L12 7 H20 L13.5 11 L16 18 L10 13 L4 18 L6.5 11 L0 7 H8Z"
+      ></path>
+    </g>
+
+    <!-- Planeta con anillos -->
+    <g
+      fill="none"
+      stroke="#9ed7d8"
+      stroke-width="1"
+      transform="translate(800,40)"
+    >
+      <circle cx="0" cy="0" r="10" fill="#9ed7d8"></circle>
+      <ellipse cx="0" cy="0" rx="18" ry="6"></ellipse>
+    </g>
+
+    <!-- Estrella -->
+    <g fill="#9ed7d8" transform="translate(950,80) scale(1)">
+      <path d="M10 0 L12 7 H20 L13.5 11 L16 18 L10 13 L4 18 L6.5 11 L0 7 H8Z"
+      ></path>
+    </g>
+
+    <!-- Planeta simple -->
+    <g transform="translate(1100,30)">
+      <circle cx="0" cy="0" r="6" fill="#9ed7d8"></circle>
+    </g>
+
+    <!-- Estrella -->
+    <g fill="#9ed7d8" transform="translate(1250,100) scale(1.4)">
+      <path d="M10 0 L12 7 H20 L13.5 11 L16 18 L10 13 L4 18 L6.5 11 L0 7 H8Z"
+      ></path>
+    </g>
+  </svg>
+</div>
