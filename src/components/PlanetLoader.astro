@@ -1,4 +1,7 @@
-<div class="orbit w-full h-full rounded-full bg-celeste">
+---
+const { bg = "celeste", width = "full", height = "full" } = Astro.props;
+---
+<div class={`orbit rounded-full bg-${bg} w-${width} h-${height}`}>
   <svg style="fill-rule:evenodd" viewBox="0 0 25000 25000">
     <defs>
       <radialGradient id="sun">
