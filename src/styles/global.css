@@ -9,12 +9,12 @@
 }
 
 @theme {
-    --font-inter: Inter;
+    --font-inter: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-coco: "CGSC";
 
-    --color-celeste: #9ed7d8;
+    --color-celeste: #d3eaeb;
     --color-arena: #f8c373;
-    --color-rosa: #db9191;
+    --color-rosa: #deb8b8;
 
     --height-hero: calc(100vh + 80px);
 }
@@ -29,7 +29,7 @@
 }
 
 .bg-cielo {
-    background-image: url("/images/cielo.webp");
+    background-image: url("/images/cielo2.jpg");
     background-size: cover;
     background-position: center;
 }
